@@ -3,6 +3,8 @@
 "  \ V /| | | | | | | | | (__
 "   \_/ |_|_| |_| |_|_|  \___|
 
+" This is Mac OS
+
 " Load Pathogen for plugins:
 	execute pathogen#infect()
 	execute pathogen#helptags()
