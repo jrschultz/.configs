@@ -3,22 +3,24 @@
 """"""""""""""""""""""""""""""""""""""""""""""
 "=> Remapping
 """"""""""""""""""""""""""""""""""""""""""""""
+
 nnoremap j gj
 nnoremap k gk
 
 """"""""""""""""""""""""""""""""""""""""""""""
 "=> Sets
 """"""""""""""""""""""""""""""""""""""""""""""
+
 set title
 set nocompatible
 set path+=**
 set showcmd
 set showmode
-set wrap  
+set wrap 
+set linebreak
 set ignorecase "ignores case when searching 
 set smartcase 
 set incsearch " sets incremental search
-set scrolloff=8 " scrolls when cursor is # lines from top or bottom
 set encoding=utf-8
 set mouse=a
 set clipboard+=unnamedplus " allows pasting from system clipboard
@@ -35,16 +37,6 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
-set colorcolumn=80
-
-""""""""""""""""""""""""""""""""""""""""""""""
-" => Visuals
-""""""""""""""""""""""""""""""""""""""""""""""
-highlight ColorColumn ctermbg=0 guibg=lightgrey
-colorscheme gruvbox
-set background=dark
-filetype plugin on
-syntax on
 
 """"""""""""""""""""""""""""""""""""""""""""""
 "=> Vim Plug Plugins!
@@ -59,5 +51,13 @@ Plug 'vim-pandoc/vim-pandoc-syntax'
 
 call plug#end()
 
+""""""""""""""""""""""""""""""""""""""""""""""
+" => Visuals
+""""""""""""""""""""""""""""""""""""""""""""""
 
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+colorscheme gruvbox 
+set background=dark
+filetype plugin on
+syntax on
 
