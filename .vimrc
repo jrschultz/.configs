@@ -1,4 +1,5 @@
 " jschultz.xyz .vimrc
+" 20210525-Ver 1.1
 "
 """"""""""""""""""""""""""""""""""""""""""""""
 "=> Remapping
@@ -6,6 +7,7 @@
 
 nnoremap j gj
 nnoremap k gk
+imap jk <Esc>
 
 """"""""""""""""""""""""""""""""""""""""""""""
 "=> Sets
@@ -16,8 +18,7 @@ set nocompatible
 set path+=**
 set showcmd
 set showmode
-set wrap 
-set linebreak
+set wrap linebreak nolist
 set ignorecase "ignores case when searching 
 set smartcase 
 set incsearch " sets incremental search
@@ -56,6 +57,7 @@ call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""
 
 highlight ColorColumn ctermbg=0 guibg=lightgrey
+let g:gruvbox_guisp_fallback = "bg"
 colorscheme gruvbox 
 set background=dark
 filetype plugin on
