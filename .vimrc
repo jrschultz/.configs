@@ -1,5 +1,5 @@
 " jschultz.xyz .vimrc
-" 20210525-Ver 1.1
+" 20210527-Ver 1.2
 "
 """"""""""""""""""""""""""""""""""""""""""""""
 "=> Remapping
@@ -63,6 +63,70 @@ colorscheme gruvbox
 set background=dark
 filetype plugin on
 syntax on
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
