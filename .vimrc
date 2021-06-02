@@ -1,5 +1,6 @@
 " jschultz.xyz .vimrc
-" 20210527-Ver 1.2
+" 20210527-Ver 1.3
+" Use with vim-gtk
 "
 """"""""""""""""""""""""""""""""""""""""""""""
 "=> Remapping
@@ -24,7 +25,7 @@ set smartcase
 set incsearch " sets incremental search
 set encoding=utf-8
 set mouse=a
-set clipboard+=unnamedplus " allows pasting from system clipboard
+set clipboard=unnamedplus " allows pasting from system clipboard
 set spell spelllang=en_ca
 set noerrorbells
 set tabstop=4 softtabstop=4
