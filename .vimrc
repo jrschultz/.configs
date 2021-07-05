@@ -1,5 +1,5 @@
 " jschultz.xyz .vimrc
-" 20210527-Ver 1.3
+" 20210705-Ver 1.4
 " Use with vim-gtk
 "
 """"""""""""""""""""""""""""""""""""""""""""""
@@ -14,6 +14,7 @@ imap jk <Esc>
 "=> Sets
 """"""""""""""""""""""""""""""""""""""""""""""
 
+autocmd TextChanged,TextChangedI <buffer> silent write
 set title
 set nocompatible
 set path+=**
@@ -64,26 +65,6 @@ colorscheme gruvbox
 set background=dark
 filetype plugin on
 syntax on
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
