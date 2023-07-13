@@ -94,6 +94,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -108,9 +109,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias d="cd /home/jason/Downloads"
 alias x="exit"
-alias up="sudo nala upgrade -y"
+alias up="sudo dnf upgrade -y"
 alias yt="yt-dlp"
 alias paschal="ssh jason@192.168.0.180"
+alias freund="ssh jason@192.168.0.152"
+alias ls="exa --color=always --group-directories-first"
+alias makepass="cat ~/wordlist.txt|shuf|head -12|sed 's/\b./\u&/g'|paste -s|tr -d '[:space:]'"
+#alias makepass="cat /usr/share/dict/words|shuf|head -12"
 
 #Prompt
 
