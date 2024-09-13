@@ -14,12 +14,16 @@ export EDITOR=vim
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Coloured Man Pages
+export PAGER=most
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="bira"
-ZSH_THEME="strug"
+#ZSH_THEME="strug"
+ZSH_THEME="jonathan"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -115,13 +119,14 @@ alias d="cd /home/jason/Downloads"
 alias x="exit"
 alias up="sudo nala upgrade -y && flatpak upgrade -y"
 alias yt="yt-dlp"
-alias paschal="ssh jason@192.168.0.180"
-alias freund="ssh jason@192.168.0.152"
 alias ls="exa --color=always --group-directories-first"
 alias makepass="cat ~/wordlist.txt|shuf|head -12|sed 's/\b./\u&/g'|paste -s|tr -d '[:space:]'"
 alias nvim="/home/jason/Apps/nvim.appimage" 
 alias bat="batcat"
-
+alias pass="xclip -selection c < /home/jason/.pass"
+alias lotw="xclip -selection c < /home/jason/.lotw"
+alias top="bpytop"
+alias size="du -sh * | sort -h"
 #Prompt
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
